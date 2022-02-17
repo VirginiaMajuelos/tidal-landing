@@ -31,20 +31,23 @@
           font-family: "vodafone-light";
       }
 
-    </style>
+    </style> 
 
     <!-- link your styles -->
     <link rel="stylesheet" href="./Styles/css/styles.css" />
     <title>Tidal Vodafone</title>
-  </head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"> 
+</head>
 
   <body>
     <!--Navbar menu-->
 
-    <nav class="vodafone-light">
+    <nav class="vodafone-light navbar">
       <ul>
-        <li><a href="#">Particulares</a></li>
-        <li><a href="#">Autonomos</a></li>
+        <li><a class="list-nav1" href="#">Particulares</a></li>
+        <li><a class="list-nav2" href="#">Autónomos y profesionales</a></li>
       </nav> 
 
     <header class="vodafone-light">
@@ -64,7 +67,7 @@
     <!--header-->
     <main class="container-header" >
     <img src="./Styles/assets/logos/tidal-logo.png" alt="logo-tidal">
-      <h1 class="h1 vodafoneRg" >TIDAL Premium llega a España con Vodafone </h1>
+      <h1 class="h1 vodafone-light">TIDAL Premium llega a España con Vodafone </h1>
       <h2 class="h2 vodafone-light">El futuro de la musica está aquí, ahora TIDAL de regalo con tu tarifa Vodafone</h2>
       <h3 class="h3 vodafoneRg">3 meses gratis con tu tarifa</h3>
     <button class="button-header">Activar</button>
@@ -72,37 +75,44 @@
 
     <!--second nav-->
 
-    <section class="section1">
+    <section class="VodafoneRg section1">
         <p>Inicio</p>
-        <h3> > </h3>
+        <i class="icon-section1 fa-solid fa-angle-right"></i>
         <p class="text-section1">Tidal</p>
     </section>
 
+ 
     <!--section2-->
 
     <section class="section2">
         <h4 class="VodafoneLt-Regular">Descrubre por qué TIDAL es mucho más que una plataforma de música</h4>
-        <div class="container-box-section2">
+        <div class="vodafoneRg container-box-section2">
             <div class="container-card">
                 <img src="./Styles/assets/images/img-ficha-1-legacy-tidal-partis.png" alt="image-ficha1">
-                <h5 class="VodafoneLt-Regular">Estrenos en Exclusiva</h5>
+                <h5>Estrenos en Exclusiva</h5>
                 <p>TIDAL ha estrenado en exclusiva los mejores álbumes de los dos últimos años y siempre con la mejor calidad de sonido.</p>
             </div>
 
             <div class="container-card">
                 <img src="./Styles/assets/images/captura-de-pantalla-2018-02-14-a-las-11-47-23.png" alt="image-ficha1">
-                <h5 class="VodafoneLt-Regular">El mejor contenido audiovisual</h5>
+                <h5 >El mejor contenido audiovisual</h5>
                 <p>Más de 200 mil videos musicales en alta definición, streaming de conciertos  en directo y series originales.</p>
             </div>
 
             <div class="container-card">
                 <img src="./Styles/assets/images/img-ficha-2-legacy-tidal-partis.png" alt="image-ficha1">
-                <h5 class="VodafoneLt-Regular">Mucho más que música</h5>
+                <h5 >Mucho más que música</h5>
                 <p>Recomendaciones de conciertos según tus gustos y localización geográfica. Gana entradas para tus conciertos preferidos.</p>
             </div>     
         </div>
+        <div class="container-item-carousel">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
      <h4 class="VodafoneLt-Regular">Además podrás disfrutar de:</h4>
-        <div class="container-list">
+        <div class="vodafoneRg container-list">
             <div class="container-item">
                 <ul>
                     <li class="list-item">              
@@ -138,6 +148,31 @@
             </div>
         </div>
     </section>
+
+    <script src="https://kit.fontawesome.com/e65e77819b.js" crossorigin="anonymous"></script>
+    <script>
+        $(".carousel").owlCarousel({
+            margin: 10,
+            loop: true,
+            autoplay:true,
+            autoplayTimeout: 2000,
+            autoplayHoverPause: true,
+            responsive: {
+                0:{
+                    items:1,
+                    nav:false
+                },
+                600:{
+                    items:2,
+                    nav:false
+                },
+                1000:{
+                    items:3,
+                    nav:false
+                },
+            }
+        })
+    </script>
   </body>
 </html>
 

@@ -4,6 +4,10 @@
 }
 /* nav menu */
 
+body {
+  overflow-x: hidden;
+}
+
 nav {
   background-color: #5f5d5d;
   display: flex;
@@ -136,6 +140,7 @@ h3 {
   margin-top: 30px;
   margin-bottom: 40px;
   cursor: pointer;
+  text-decoration: none;
 }
 
 /* section1 */
@@ -179,13 +184,16 @@ h3 {
   color: #fff;
   font-size: 36px;
   font-weight: lighter;
-  padding-bottom: 40px;
 }
 
-.container-box-section2 {
+.carrousel {
+  width: 100%;
+}
+
+.container-all-cards {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  flex-flow: row nowrap;
+  justify-content: space-between;
   align-items: center;
   padding: 30px 50px;
 }
@@ -193,32 +201,32 @@ h3 {
 .container-card {
   border: 1px solid #fff;
   width: 400px;
-  height: 360px;
+  height: 282px;
   margin: 10px;
 }
 
 .container-card img {
   width: 400px;
+  height: 146px;
 }
 
 .container-card h5 {
-  padding-top: 25px;
-  padding-bottom: 10px;
   font-size: 20px;
   color: #fff;
+  padding: 20px 0 10px 0;
 }
 
 .container-card p {
-  font-size: 17px;
+  font-size: 16px;
   color: #fff;
   text-align: center;
-  padding: 30px;
+  padding: 10px 20px;
 }
 
 .container-list {
   display: flex;
   justify-content: space-between;
-  padding: 10px 40px;
+  padding: 20px 50px;
 }
 
 .container-item {
@@ -243,10 +251,6 @@ h3 {
 /* size transition laptop>tablet */
 
 @media only screen and (max-width: 1200px) {
-  .container-box-section2 {
-    overflow: hidden;
-  }
-
   .list-item img {
     width: 23px;
     height: 20px;
@@ -272,6 +276,11 @@ h3 {
 /* size tablet */
 
 @media only screen and (max-width: 768px) {
+  html {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
   .navbar {
     display: none;
   }
@@ -280,7 +289,7 @@ h3 {
     background-image: url(../assets/header/rectangle-3.png);
     background-repeat: no-repeat;
     object-fit: contain;
-    width: 100%;
+    width: 768px;
     height: 400px;
     display: flex;
     flex-direction: column;
@@ -303,35 +312,24 @@ h3 {
   }
 
   .section2 {
-    padding: 30px 5px;
+    padding: 40px 5px;
   }
 
-  .section2 h4 {
-    font-size: 30px;
-    padding: 10px 30px;
+  .carrousel {
+    width: 750px;
   }
 
-  .container-box-section2 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 30px;
-    overflow: hidden;
+  .container-all-cards {
+    padding: 30px 2px;
+    transform: translateX(0%);
   }
 
   .container-card {
     width: 344px;
-    height: 320px;
-    margin: 10px;
-  }
-
-  .container-card:hover {
-    transform: scale(1.1);
   }
 
   .container-card img {
     width: 344px;
-    height: 146px;
   }
 
   .container-card h5 {
@@ -350,9 +348,8 @@ h3 {
     padding-bottom: 30px;
   }
 
-  .container-item-carousel {
+  .dots {
     text-align: center;
-    padding-bottom: 20px;
   }
 
   .dot {
@@ -366,8 +363,7 @@ h3 {
     transition: background-color 0.6s ease;
   }
 
-  .active,
-  .dot:hover {
+  .dot.active {
     border: 2px solid #fff;
     background-color: #252424;
   }
@@ -394,17 +390,6 @@ h3 {
     padding: 20px 0;
   }
 
-  .container-card {
-    width: 261px;
-    height: 320px;
-    margin: 10px;
-  }
-
-  .container-card img {
-    width: 261px;
-    height: 127px;
-  }
-
   .h1 {
     font-size: 30px;
   }
@@ -416,6 +401,11 @@ h3 {
 
   .h3 {
     font-size: 20px;
+  }
+
+  .section2 h4 {
+    font-size: 26px;
+    padding: 10px 35px;
   }
 
   .container-header img {
@@ -434,6 +424,24 @@ h3 {
   .container-list {
     display: flex;
     flex-direction: column;
-    padding: 10px 15px;
+    padding: 15px 15px;
+  }
+
+  .carrousel {
+    width: 319px;
+  }
+
+  .container-all-cards {
+    width: 319px;
+    padding: 15px 2px;
+  }
+
+  .container-card {
+    width: 310px;
+    height: auto;
+  }
+
+  .container-card img {
+    width: 310px;
   }
 }

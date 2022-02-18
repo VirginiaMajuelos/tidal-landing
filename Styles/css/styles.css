@@ -24,7 +24,7 @@ nav ul {
   flex-direction: row;
   justify-content: space-around;
   margin-bottom: 0;
-  margin-left: 85px;
+  margin-left: 140px;
 }
 
 nav ul li a {
@@ -37,6 +37,14 @@ nav ul li a {
   color: #fff;
 }
 
+.menuHiden {
+  display: none;
+}
+
+.iconArrow {
+  display: none;
+}
+
 .list-nav1 {
   background-color: #fff;
   color: #696969;
@@ -47,6 +55,7 @@ header {
   background-color: #fff;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
   height: 80px;
@@ -57,7 +66,9 @@ header ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 0;
+  padding-left: 40px;
 }
 
 header ul li a {
@@ -66,7 +77,7 @@ header ul li a {
   margin: 0 15px;
   font-weight: 100;
   font-size: 25px;
-  padding-left: 20px;
+  padding-left: 30px;
 }
 
 header ul li a:hover {
@@ -74,8 +85,18 @@ header ul li a:hover {
 }
 
 header img {
-  height: 30px;
+  height: 50px;
   padding-left: 20px;
+}
+
+.icon-header {
+  font-size: 25px;
+  color: #696969;
+  padding: 0 25px;
+}
+
+.icon-header:nth-child(4) {
+  display: none;
 }
 
 /* section header */
@@ -281,8 +302,32 @@ h3 {
     overflow-x: hidden;
   }
 
+  header ul li a {
+    display: none;
+  }
+  .iconArrow {
+    display: inline;
+    color: #696969;
+  }
+
   .navbar {
     display: none;
+  }
+
+  .icon-header:nth-child(4) {
+    display: inline;
+  }
+
+  nav ul li a:nth-child(1) {
+    display: inline;
+  }
+
+  .menuHiden {
+    display: inline;
+  }
+
+  .icon-header {
+    padding: 0 10px;
   }
 
   .container-header {
@@ -375,9 +420,25 @@ h3 {
   header {
     height: 50px;
   }
+  header img {
+    height: 30px;
+    padding-left: 6px;
+  }
 
+  .icon-header {
+    font-size: 15px;
+  }
+
+  .menuHiden {
+    padding: 5px;
+    font-size: 15px;
+  }
   header ul li a {
     display: none;
+  }
+
+  header ul {
+    padding: 5px;
   }
 
   .container-header {
@@ -387,7 +448,7 @@ h3 {
     width: 390px;
     background-size: cover;
     text-align: center;
-    padding: 20px 0;
+    padding: 20px 0px;
   }
 
   .h1 {
@@ -413,10 +474,10 @@ h3 {
   }
 
   .button-header {
-    width: 370px;
+    width: 350px;
     padding: 10px;
     border: none;
-    font-size: 15px;
+    font-size: 20px;
     margin-top: 30px;
     margin-bottom: 40px;
   }

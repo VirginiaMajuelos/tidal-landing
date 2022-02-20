@@ -19,11 +19,22 @@ Responsive screen sizes:
 <ul>
 <li> HTML 5 </li>
 <li> CSS 3 </li>
-<li> JAVASCRIPT  </li>
+<li> JAVASCRIPT </li>
 </ul>
 
 and Css compresor
 
+## Performance web
+
+Use: lighthouse
+LCP: good!
+
+<img alt="lighthouse" src="https://i.imgur.com/Nd8fR5E.png" />
+
+Errors or improvements: fonts in deploy git pages. It's ok in local.
+
+
 ## Goal:
 
-Done landing page in 8h.
+
+Done landing page in 8h and I have made extra improvements, details and optimization later.

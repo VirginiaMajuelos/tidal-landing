@@ -8,11 +8,11 @@
         <!-- link the fontlocal  -->
         <style>
         @font-face {
-            font-family: "VodafoneRg";
-            src: url("./Styles/fonts/VodafoneRg.ttf");
+            font-family: "VodafoneRG";
+            src: url("./Styles/fonts/VodafoneRG.ttf");
         }
-        .vodafoneRg {
-            font-family: "VodafoneRg";
+        .VodafoneRG {
+            font-family: "VodafoneRG";
         }
 
         @font-face {
@@ -24,27 +24,23 @@
         }
 
         @font-face {
-            font-family: "vodafone-light";
+            font-family: "Vodafone-light";
             src: url("./Styles/fonts/vodafone-light.woff");
         }
-        .vodafone-light{
-            font-family: "vodafone-light";
+        .Vodafone-light{
+            font-family: "Vodafone-light";
         }
-
         </style> 
-
         <!-- link your styles -->
         <link rel="stylesheet" href="./Styles/css/styles.css" />
         <title>Tidal Vodafone</title>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"> 
     </head>     
 
     <body>
         <!--Navbar menu-->
 
-        <nav class="vodafone-light navbar">
+        <nav class="Vodafone-light navbar">
+            <div>
             <ul>
                 <li>
                     <a class="list-nav1" href="#">Particulares</a>
@@ -53,11 +49,16 @@
                 <li>
                     <a class="list-nav2" href="#">Autónomos y profesionales</a>
                 </li>
+            </div>
+            <div >
+                <a class="list-nav2" href="#">Castellano</a>
+                <i class="list-nav2 fa-solid fa-chevron-down"></i>
+            </div>
         </nav> 
 
         <!--header menu-->
 
-        <header class="vodafone-light">
+        <header class="Vodafone-light">
             
             <div>
                 <ul>
@@ -95,15 +96,15 @@
         <!--section header-->
         <section class="container-header" >
             <img src="./Styles/assets/logos/tidal-logo.png" alt="logo-tidal">
-            <h1 class="h1 vodafone-light">TIDAL Premium llega a España con Vodafone </h1>
-            <h2 class="h2 vodafone-light">El futuro de la musica está aquí, ahora TIDAL de regalo con tu tarifa Vodafone</h2>
-            <h3 class="h3 vodafoneRg">3 meses gratis con tu tarifa</h3>
-            <a href="#" class="button-header">Activar</a>
+            <h1 class="h1 VodafoneRG">TIDAL Premium llega a España con Vodafone </h1>
+            <h2 class="h2 Vodafone-light">El futuro de la musica está aquí, ahora TIDAL de regalo con tu tarifa Vodafone</h2>
+            <h3 class="h3 VodafoneRG">3 meses gratis con tu tarifa</h3>
+            <a href="#" class="button-header VodafoneRG">Activar</a>
         </section>
 
      <!--second nav-->
 
-         <section class="VodafoneRg section1">
+         <section class="VodafoneRG section1">
             <p>Inicio</p>
             <i class="icon-section1 fa-solid fa-angle-right"></i>
             <p class="text-section1">Tidal</p>
@@ -114,12 +115,15 @@
         <section class="section2">
             <h4 class="VodafoneLt-Regular">Descrubre por qué TIDAL es mucho más que una plataforma de música</h4>
                       <div class="carrousel">
-        <div class="vodafoneRg container-all-cards">
+        <div class="VodafoneRG container-all-cards">
           <div class="container-card">
+            <picture>
             <img
-              src="./Styles/assets/images/img-ficha-1-legacy-tidal-partis.png"
-              alt="image-ficha1"
-            />
+             src="./Styles/assets/images-carousel/img-ficha-1-legacy-tidal-partis.jpg"
+             alt="image 1: Estrenos en exclusiva"/>
+            <source srcset="./Styles/assets/images-carousel/img-ficha-1-legacy-tidal-partis@2x.jpg">
+            <source srcset="./Styles/assets/images-carousel/img-ficha-1-legacy-tidal-partis@3x.jpg">
+            </picture>
             <h5>Estrenos en Exclusiva</h5>
             <p>
               TIDAL ha estrenado en exclusiva los mejores álbumes de los dos
@@ -128,10 +132,13 @@
           </div>
 
           <div class="mySlides container-card">
+            <picture>
             <img
-              src="./Styles/assets/images/captura-de-pantalla-2018-02-14-a-las-11-47-23.png"
-              alt="image-ficha1"
-            />
+              src="./Styles/assets/images-carousel/captura-de-pantalla-2018-02-14-a-las-11-47-23.jpg"
+              alt="image 2: El mejor contendio audiovisual"/>
+             <source srcset="./Styles/assets/images-carousel/captura-de-pantalla-2018-02-14-a-las-11-47-23@2x.jpg">
+            <source srcset="./Styles/assets/images-carousel/captura-de-pantalla-2018-02-14-a-las-11-47-23@3x.jpg">
+            </picture>
             <h5>El mejor contenido audiovisual</h5>
             <p>
               Más de 200 mil videos musicales en alta definición, streaming de
@@ -140,10 +147,15 @@
           </div>
 
           <div class="mySlides container-card">
+            <picture>
             <img
-              src="./Styles/assets/images/img-ficha-2-legacy-tidal-partis.png"
-              alt="image-ficha1"
+              src="./Styles/assets/images-carousel/img-ficha-2-legacy-tidal-partis.jpg"
+              alt="image 3: Mucho más que música"
             />
+            <source srcset="./Styles/assets/images-carousel/img-ficha-2-legacy-tidal-partis@2x.jpg">
+            <source srcset="./Styles/assets/images-carousel/img-ficha-2-legacy-tidal-partis@3x.jpg">
+            </picture>
+
             <h5>Mucho más que música</h5>
             <p>
               Recomendaciones de conciertos según tus gustos y localización
@@ -159,19 +171,19 @@
       </div>
 
             <h4 class="VodafoneLt-Regular">Además podrás disfrutar de:</h4>
-                <div class="vodafoneRg container-list">
+                <div class="VodafoneRG container-list">
                     <div class="container-item">
                         <ul>
                             <li class="list-item">              
-                                <img src="./Styles/assets/icons/tick-or-solved.png" alt="tick">
+                                <img src="./Styles/assets/icons/tick-or-solved.svg" alt="tick">
                                 <p>El más <strong>extenso catálogo</strong> de <strong>música en alta calidad.</strong></p>
                             </li>
                             <li class="list-item">
-                                <img src="./Styles/assets/icons/tick-or-solved.png" alt="tick">
+                                <img src="./Styles/assets/icons/tick-or-solved.svg" alt="tick">
                                 <p>Reproducción de música <strong>sin conexión</strong>.</p>
                             </li>
                             <li class="list-item">
-                                <img src="./Styles/assets/icons/tick-or-solved.png" alt="tick">
+                                <img src="./Styles/assets/icons/tick-or-solved.svg" alt="tick">
                                 <p><strong>Multidispositivo</strong>: hasta 3 dispositivos en modo sin conexión.</p>
                             </li>
                         </ul>
@@ -180,17 +192,17 @@
                     <div class="container-item">
                         <ul>
                             <li class="list-item">              
-                                <img src="./Styles/assets/icons/tick-or-solved.png" alt="tick">
+                                <img src="./Styles/assets/icons/tick-or-solved.svg" alt="tick">
                                 <p>Podrás compartir música a través de <strong>redes sociales</strong>.</p>
                             </li>
 
                             <li class="list-item">
-                                <img src="./Styles/assets/icons/tick-or-solved.png" alt="tick">
+                                <img src="./Styles/assets/icons/tick-or-solved.svg" alt="tick">
                                 <p>Función <strong>“Crossfade”</strong>: evita el corte entre pistas al reproducir varias canciones.</p>
                             </li>
 
                             <li class="list-item">
-                                <img src="./Styles/assets/icons/tick-or-solved.png" alt="tick">
+                                <img src="./Styles/assets/icons/tick-or-solved.svg" alt="tick">
                                 <p>Opción <strong>“Workout”</strong>: propone canciones según los gustos del usuario y el ritmo de carrera.</p>
                             </li>
                         </ul>

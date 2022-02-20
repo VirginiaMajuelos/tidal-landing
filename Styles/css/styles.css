@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
 }
+
 /* nav menu */
 
 body {
@@ -12,7 +13,7 @@ nav {
   background-color: #5f5d5d;
   display: flex;
   flex-direction: row;
-  justify-content: start;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
   height: 30px;
@@ -49,6 +50,15 @@ nav ul li a {
   background-color: #fff;
   color: #696969;
   padding: 15px;
+}
+
+.list-nav2 {
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: 100;
+  font-size: 15px;
+  font-weight: lighter;
+  color: #fff;
 }
 
 header {
@@ -102,7 +112,7 @@ header img {
 /* section header */
 
 .container-header {
-  background-image: url(../assets/header/rectangle-3.png);
+  background-image: url(../assets/header/rectangle-3.jpg);
   background-size: cover;
   width: 100%;
   height: 400px;
@@ -113,10 +123,11 @@ header img {
 }
 
 .container-header img {
-  padding: 30px;
+  padding-top: 47px;
+  padding-bottom: 20px;
 }
 
-.container-header h1,
+.container-header,
 h2,
 h3 {
   color: #fff;
@@ -125,31 +136,18 @@ h3 {
 
 .h1 {
   font-size: 44px;
+  font-family: "VodafoneRg";
   font-weight: 400;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
 }
 
 .h2 {
-  color: #fff;
-  padding: 5px;
   font-size: 30px;
   font-weight: 400;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
 }
 
 .h3 {
   font-size: 30px;
-  font-weight: 700;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
+  font-weight: bold;
 }
 
 .button-header {
@@ -158,8 +156,8 @@ h3 {
   padding: 15px 25px;
   border: none;
   font-size: 20px;
-  margin-top: 30px;
-  margin-bottom: 40px;
+  margin-top: 25px;
+  margin-bottom: 45px;
   cursor: pointer;
   text-decoration: none;
 }
@@ -222,7 +220,7 @@ h3 {
 .container-card {
   border: 1px solid #fff;
   width: 400px;
-  height: 282px;
+  height: 292px;
   margin: 10px;
 }
 
@@ -262,11 +260,11 @@ h3 {
   color: #fff;
   font-size: 16px;
   padding: 8px;
+  line-height: 18px;
 }
 
 .list-item p {
   padding-left: 10px;
-  font-size: 16px;
 }
 
 /* size transition laptop>tablet */
@@ -288,6 +286,10 @@ h3 {
     justify-content: space-around;
   }
 
+  html {
+    width: 100%;
+    overflow-x: hidden;
+  }
   .container-item {
     display: flex;
     padding: 10px 0;
@@ -297,11 +299,6 @@ h3 {
 /* size tablet */
 
 @media only screen and (max-width: 768px) {
-  html {
-    width: 100%;
-    overflow-x: hidden;
-  }
-
   header ul li a {
     display: none;
   }
@@ -331,15 +328,10 @@ h3 {
   }
 
   .container-header {
-    background-image: url(../assets/header/rectangle-3.png);
-    background-repeat: no-repeat;
+    background-image: url(../assets/header/rectangle-3@2x.jpg);
     object-fit: contain;
     width: 768px;
     height: 400px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
   }
 
   .h1 {
@@ -442,9 +434,7 @@ h3 {
   }
 
   .container-header {
-    background-image: url(../assets/header/rectangle-3.png);
-    background-repeat: no-repeat;
-    object-fit: contain;
+    background-image: url(../assets/header/rectangle-3@2x.jpg);
     width: 390px;
     background-size: cover;
     text-align: center;
@@ -453,11 +443,12 @@ h3 {
 
   .h1 {
     font-size: 30px;
+    padding: 20px;
   }
 
   .h2 {
     font-size: 20px;
-    padding: 10px 70px;
+    padding: 10px 60px;
   }
 
   .h3 {
@@ -474,7 +465,7 @@ h3 {
   }
 
   .button-header {
-    width: 350px;
+    width: 340px;
     padding: 10px;
     border: none;
     font-size: 20px;
@@ -485,7 +476,7 @@ h3 {
   .container-list {
     display: flex;
     flex-direction: column;
-    padding: 15px 15px;
+    padding: 15px;
   }
 
   .carrousel {
